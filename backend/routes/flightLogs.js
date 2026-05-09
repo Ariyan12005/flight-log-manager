@@ -33,17 +33,4 @@ router.delete("/:id", async (req, res) => {
     res.status(500).json({ message: "Error deleting log" });
   }
 });
-router.put("/:id", async (req, res) => {
-  try {
-    const updatedLog = await FlightLog.findByIdAndUpdate(
-      req.params.id,
-      req.body,
-      { new: true }
-    );
-
-    res.json(updatedLog);
-  } catch (error) {
-    res.status(500).json({ message: "Error updating log" });
-  }
-});
 module.exports = router;
