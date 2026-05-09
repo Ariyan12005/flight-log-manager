@@ -1,3 +1,7 @@
+# Flight Log Manager
+
+A full-stack flight log management platform designed for pilots to manage and organize flight records.
+
 ## Technologies
 
 - React
